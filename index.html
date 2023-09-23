@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>My first three.js app</title>
+		<style>
+			body { margin: 0; }
+
+                        /* ... (tu CSS existente) ... */
+            .modal {
+                display: none; /* Hidden by default */
+                position: fixed; /* Stay in place */
+                /* ... (otros estilos para tu modal) ... */
+            }
+            .modal-content {
+                /* ... (estilos para el contenido del modal) ... */
+            }
+            .close {
+                /* ... (estilos para el botón de cierre del modal) ... */
+            }
+		</style>
+	</head>
+	<body>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <p>Personalizar Imagen</p>
+              <input type="text" id="text-input" placeholder="Escribe algo...">
+              <button onclick="updateText()">Actualizar Texto</button>
+            </div>
+          </div>
+
+		<script type="module" src="js/main.js"></script>
+	</body>
+</html>
